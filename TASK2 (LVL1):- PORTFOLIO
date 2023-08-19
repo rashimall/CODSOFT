@@ -1,0 +1,192 @@
+********HTML CODE***********
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-------link icon--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--link file CSS-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+             <nav>
+                <a href="#" class="logo">RASHI MALL</a>
+                <div class="nav-link">
+                    <a href="active">Home</a>
+                    <a href="RASHI CV.pdf">Download CV <span></span> </a>
+                    <a href="https://cloudhq.net/s/8931608caae22d">Contact </a>
+                </div>
+             </nav>
+
+             <div class="content">
+                <div class="div-text">
+                    <h2>Hi, I am Rashi </h2>
+                    <h4>3rd Year IT Engineeering Student</h4>
+                    <p>Hello! I'm currently an undergraduate student at K.C College of Engineering and Management Studies, 
+                        pursuing a degree in Information Technology. I am a dedicated learner, always seeking to expand my knowledge and stay updated with the latest advancements
+                         in the field.As a dedicated learner, I thrive on the challenge of staying ahead of the curve, constantly seeking opportunities to expand my knowledge and skill set. </p>
+                         <a href="#" class="btn">My Projects</a>
+                         
+                    
+                </div>
+                <div class="div-img">
+                    <img src="hero.png.JPG" alt="">
+                </div>
+             </div>
+             <div class="copyright">
+             <p>
+                &copy; 2023 Your Company. All rights reserved.<br />
+                Owner- RASHI MALL <br />
+                Web Development Internship (Level 1:- Task 1) </p>
+            </div>   
+             <div class="soc-link">
+                <a href="https://www.instagram.com/rashhii_07/"><i class="fa-brands fa-instagram"></i> </a>
+                <a href="https://www.facebook.com/people/Rashi-Mall/pfbid02vF1VBEByJ3zqGJgDXbKk2i7zkJuoK8G7xRNtCxo1iF1hRHwxWStyhKUVP7ALSaVxl/?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> </a>
+                <a href="https://www.linkedin.com/in/rashi-mall/"><i class="fa-brands fa-linkedin"></i> </a>
+                
+             </div>
+        </div>
+    </div>
+</body>
+</html>
+************CSS CODE************
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.container::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-color: rgb(24, 174, 194);
+}
+.container .hero{
+    position:relative;
+    z-index: 10;
+    height: 85vh;
+    width: 75%;
+    background: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(25px);
+    border: 3px solid #ff9dcf;
+    border-radius: 20px; 
+    box-shadow: -15px 17px 17px rgba(10, 10, 10,0.15);
+    padding: 0 40px 0 80px;
+}
+.hero nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+.hero .nav-link a{
+    color: #2c0760;
+    padding: 8px;
+
+}
+
+.hero nav .logo{
+    color: #0a0e4a;
+    font-size:45px;
+    font-weight: bolder;
+}
+.hero nav .nav-links a{          
+    color: #ff9dcf;
+    margin-left: 10px;
+    text-transform:capitalize;
+    transition: 0.3s;
+    word-spacing: 2px;
+}
+.hero nav .nav-links a:hover,
+.hero nav .nav-links a:active{
+    color: rgb(98, 204, 246);
+}
+
+.soc-link{
+position:absolute;
+top: 50%;
+right: 10px;
+transform: translate(-50%);
+display: flex;
+flex-direction: column;
+}
+.soc-link a i{
+    font-size: 25px;
+    cursor: pointer;
+    color: #1b0d5f;
+    margin-bottom: 20px;
+
+}
+.hero .content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+
+}
+.hero .content .div-text{
+    width: 40%; 
+}
+.hero .content .div-text h2{
+    margin-bottom: 20px;
+    color: #f9f9f9;
+    padding-right: 40px;
+
+
+}
+.hero .content .div-text h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #1b0d5f;
+    
+}
+.hero .content .div-text .btn{
+    padding: 10px 20px;
+    background-color: #0c1763;
+    border: 2px solid #0c1763;
+    color: #f9f9f9;
+    border-radius: 5px;
+    font-weight:bold;
+    position: absolute;
+    bottom: 120px;
+}
+.hero .content .div-img{
+    position: relative;
+    left: 10px;
+    width: 40%;
+    
+}
+.hero .content .div-img img{
+    padding-right: 40px;
+    width: 100%;
+}
+.soc-link a i:hover{
+    color: rgb(98, 204, 246);
+}
+
+.hero .copyright{
+    bottom: 20px;
+    color: #f9f9f9;
+    left: 70px;
+}
