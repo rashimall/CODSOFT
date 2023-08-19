@@ -1,0 +1,135 @@
+*******HTML CODE*************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="copyright">
+            <p>
+               &copy; 2023 Your Company. All rights reserved.<br />
+               Owner- RASHI MALL <br />
+               Web Development Internship (Level 1:- Task 1)</p>
+        </div> 
+        <div class="logo">
+           <b> SKY'S THE LIMIT </b>
+        </div>
+        <div class="menu">
+          <i><b><a href="#">HOME</a> </b></i>
+          <i><b><a href="#">MANALI</a></b></i>
+          <i><b><a href="#">KULLU</a></b></i>
+          <i><b><a href="#">KASOL</a></b></i>
+          <i><b><a href="#">CONTACT</a></b></i>
+        </div>
+        <div class="register">
+            <a href="#">BOOK NOW</a>
+        </div>
+
+    </nav>
+    <section class="h-text">
+        <span>
+            ENJOY
+        </span>
+        <h1>Explore The World</h1>
+        <br>
+        <a href="">VISIT NOW</a>
+    
+    </section>
+    </header>
+    
+</body>
+</html>
+*******CSS CODE**************
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(abc.jpg);
+    background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+  width: 100%;
+  height: 100px;
+ 
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+
+}
+.menu a:hover{
+    border: 1px solid rgb(16, 22, 52);
+    background: transparent;
+}
+.register a{
+
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    background:rgb(21, 42, 148)
+}
+.register a:hover{
+    border: 1px solid rgb(21, 42, 148);
+    background: transparent;
+
+}
+.h-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 650px;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    color: #070707;
+
+}
+.h-text span{
+    letter-spacing: 5px;
+}
+.h-text h1{
+    font-size: 2cm;
+}
+.h-text a{
+    text-decoration: none;
+    background:rgb(235, 239, 240);
+    padding: 10px 20px;
+    letter-spacing: 5px;
+
+}
+.h-text a:hover{
+    border: 1px solid burlywood;
+    background: rgb(153, 155, 165);
+}
+.copyright{
+
+    color: #ffffff;;
+    position: absolute;
+    bottom: 30px;
+
+}
